@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie - formularz rejestracyjny - Przemysław Zubik</title>
+<link rel="icon" type="image/x-icon" href="img/Heat-Service-Icon.png">
+<meta name="description" content="Zadanie - formularz rejestracyjny - Przemysław Zubik">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+
+<div class="box">
+
+  <!-- Formularz -->
+  
+  <div class="wrapper" id="wrapper">
+
+    <!-- Rozmazanie -->
+    
+    <div id="blur">
+      <div id="ellipse-178"></div>
+      <div id="ellipse-179"></div>
+    </div>
+
+    <!-- Belka górna -->
+
+    <div id="header">
+      <div id="status-bar">
+
+        <!-- Godzina -->
+      
+        <div id="time-style">
+          <div id="time">9:41</div>
+        </div>
+
+        <!-- Zasięg -->
+
+        <div id="cellular-connection">
+          <div style="--i:2"></div>
+          <div style="--i:3"></div>
+          <div style="--i:4"></div>
+          <div style="--i:5"></div>
+        </div>
+
+        <!-- Ikona WiFi -->
+
+        <div id="wifi">
+          <div class="wifi-3" id="wifi-3"></div>
+          <div class="wifi-2" id="wifi-2"></div>
+          <div class="wifi-1" id="wifi-1"></div>
+        </div>
+
+        <!-- Ikona Baterii -->
+
+        <div id="battery">
+          <div id="capacity"></div>
+          <div id="border"></div>
+          <div id="cap"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Logo i Podpis -->
+
+    <div id="group-36">
+      <div id="heat-service-icon"></div>
+      <div id="heat-service">Register <span class="green normal">Form</span></div>
+    </div>
+
+    <!-- Pola Tekstowe z Przyciskiem -->
+
+    <div id="forms">
+      
+        <div class="forms default-1">
+          <button id="btn1" class="placeholder-1 active">Klient</button>
+          <button id="btn2" class="placeholder-1">Producent</button>
+          <button id="btn3" class="placeholder-1">Serwis</button>
+        </div>
+
+        <form class="form" method="post" id="form">
+
+          <div class="forms default-2">
+            <input type="text" id="name" name="name" placeholder="Imię">
+          </div>
+
+          <div class="forms default-3">
+            <input type="text" id="email" name="email" placeholder="Email">
+          </div>
+
+          <div class="forms default-4">
+            <input type="text" id="password1" name="password1" placeholder="Password">
+          </div>
+
+          <div class="forms default-5">
+            <input type="text" id="password2" name="password2" placeholder="Confirm password">
+          </div>
+
+          <div class="forms" id="button">
+            <input type="submit" id="register" value="Zarejestruj się">
+          </div>
+
+          <div id="errors"></div>
+
+        </form>
+
+    </div>
+
+    <!-- Regulamin i Stopka -->
+
+    <div id="alternative-signup">
+
+        <p id="terms">Akceptuję regulamin <br> <span class="green">Terms of Service</span> and <span class="green">Privacy Policy</span></p>
+
+    </div>
+  
+</div>
+
+<!-- Loader po kliknięciu przycisku rejestracji -->
+
+<div id="preloader"><div id="loader" class="loader"></div></div>
+
+<script src="functions.js" defer></script>
+
+</body>
